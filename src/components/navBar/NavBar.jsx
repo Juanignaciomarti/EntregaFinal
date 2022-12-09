@@ -6,20 +6,20 @@ const NavBar = () => {
     return <div className='container'>
         <nav className="navbar navbar-expand-lg ">
             <div className="container-fluid ">
-                <Link className="navbar-brand fs-2 text-primary" to={'/'}>Free-Market</Link>
+                <Link className="navbar-brand fs-2 text-primary" to={'/'}>The Wine Cellar</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav" >
                         <li className="nav-item">
-                            <NavLink className="nav-link fs-4" activeclassname='page' to={'/category/AURICULAR'}>Auriculares</NavLink>
+                            <NavLink className="nav-link fs-4" activeclassname='page' to={'/category/Blends'}>Blends</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink  className="nav-link fs-4" activeclassname='page' to={'/category/TECLADO'}>Teclados</NavLink>  
+                            <NavLink  className="nav-link fs-4" activeclassname='page' to={'/category/Malbec'}>Malbec</NavLink>  
                         </li>
                         <li className="nav-item">
-                            <NavLink  className="nav-link fs-4" activeclassname='page' to={'/category/MOUSE'}>Mouse</NavLink>                            
+                            <NavLink  className="nav-link fs-4" activeclassname='page' to={'/category/Pinot'}>Pinot Noir</NavLink>                            
                         </li>
                     </ul>
                 </div>
