@@ -13,7 +13,7 @@ export const products = [
       "id": 2,
       "name": "Caro Blend",
       "img": "/img/Productos/BLENDS/Caro_blend.jpg",
-      "price": 19100,
+      "price": 25000,
       "stock": 9,
       "initial": 1,
       "category": "Blends",
