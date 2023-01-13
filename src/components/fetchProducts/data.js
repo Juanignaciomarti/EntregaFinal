@@ -1,3 +1,4 @@
+
 export const products = [
     {
       "id": 1,
@@ -102,7 +103,7 @@ export const products = [
     {
       "id": 13,
       "name": "Pasarisa",
-      "img": "/img/Productos/PINOT/pasarisa_pinot.jpg",
+      "img": newLocal,
       "price": 7300,
       "stock": 6,
       "initial": 1,

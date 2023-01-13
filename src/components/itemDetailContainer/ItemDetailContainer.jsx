@@ -1,38 +1,40 @@
 import React from 'react'
+import ItemDetail from '../itemDetail/ItemDetail'
 import { useEffect, useState } from 'react'
-import ItemList from '../itemList/ItemList'
 import { useParams } from 'react-router-dom'
-import Loader from '../loader/Loading'
-import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore'
-const ItemListContainer = () => {
+import Loader from '../loader/Loader'
+import { getDoc,doc,getFirestore } from 'firebase/firestore'
+
+const ItemDetailContainer = () => {
 
     const [listProducts, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
-    const { category } = useParams()
+    const {id} = useParams()
 
 
 
+    useEffect(() =>{
 
-    useEffect(() => {
-        const db = getFirestore();
-        const queryCollection = collection(db, 'products');
-        const filterPrdoduct = category ? query(queryCollection, where("category", "==", category)) : queryCollection;
-
-        getDocs(filterPrdoduct).then((snapshot) => {
-             setProducts(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
-        })
-        setLoading(false)
-    }, [category]);
-
+      const db =getFirestore()
+      const item= doc(db, "products" ,id)
+      getDoc(item).then((snapshot) => {
+        snapshot.exists()
+          setProducts({id:snapshot.id, ...snapshot.data()})  
+          setLoading(false)
+      })
+      
+    },[id])
 
 
-    return (
-        <div className='container'>
-            <div className='row '>
-                { loading ?  <Loader /> : <ItemList listProducts={listProducts} />}
-            </div>
-        </div>
-    )
+
+  return (
+    <div>
+        <div>
+              { loading ? <Loader/>: <ItemDetail listProducts={listProducts} />}      
+        </div> 
+        
+     </div>       
+  )
 }
 
-export default ItemListContainer
+export default ItemDetailContainer

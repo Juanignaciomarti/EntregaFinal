@@ -55,11 +55,12 @@ const Cart = () => {
                     </tr>
 
                     <tr>
-                        <th scope='col' colSpan={5} className="text-center"><Link onClick={clear} className="btn btn-warning m-4">
+                        <td colSpan={3}>&nbsp;</td>
+                        <td className="text-center"><Link onClick={clear} className="btn btn-warning m-4">
                             Vaciar Carrito
                         </Link>
-                            <td className='btn btn-warning m-4 '><Link to={"/checkout"} className='btn-finalizarCompra'>Finalizar Compra</Link></td>
-                        </th>
+                        </td>
+                        <td ><Link to={"/checkout"} className='btn btn-warning m-4 btn-finalizarCompra'>Finalizar Compra</Link></td>
                     </tr>
                 </tbody>
             </table>
