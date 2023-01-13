@@ -3,7 +3,7 @@ Este es el proyecto final del curso dictado por CoderHouse de React Js.
 Descripción del proyecto:
 
 Esta aplicación consiste en una tienda en línea que permite a los usuarios explorar y comprar productos. Cuenta con un carrito de compras donde los usuarios pueden ver y modificar el contenido del carrito, y calcular el precio total de los productos seleccionados. Desde la página principal se pueden ver todos los productos que contiene la tienda. Dentro de la barra de navegación podemos filtrar los productos por categoría. Cada ítem muestra información detallada incluyendo una imagen, un título, una descripción. 
-A continuación se explicaran los componentes principales y su función dentro del proyecto:
+## A continuación se explicaran los componentes principales y su función dentro del proyecto:
 
 #ItemList:
 
