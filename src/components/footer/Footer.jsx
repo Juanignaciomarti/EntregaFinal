@@ -4,8 +4,8 @@ const Footer = () => {
     return (
         <div>
             <footer>
-                <p>Copyright 2022</p>
-                <p>Todos los derechos reservados</p>
+                <p>Copyright 2022- Juan Ignacio Martinez - All rights Reserved</p>
+                
               </footer>
         </div>
     )
