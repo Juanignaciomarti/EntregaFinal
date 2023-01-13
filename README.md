@@ -45,8 +45,3 @@ Proporciona acceso a la información del carrito de compras y funciones para man
 A su vez, este proyecto implemto Firebase y React Router.
 Firebase hace posible el almacenamiento y creacion de ordenes de compra. Posibilitando tener una base de datos en tiempo real, facilitando asi la gestion de datos para un optimo funcionamiento.
 React Router, por su parte, permite la navegacion entre paginas dentro de la aplicación.
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 64898b5 (readme)
