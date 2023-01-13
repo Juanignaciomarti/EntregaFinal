@@ -41,7 +41,7 @@ const Cart = () => {
                             <td className='align-middle'><b>{item.name}</b></td>
                             <td className='align-middle'>{item.cantidad}</td>
                             <td className='align-middle'>${item.cantidad * item.price}</td>
-                            <td className='align-middle'><Link onClick={() => { removeItem(item.id) }}><img src={"https://www.kindpng.com/picc/m/108-1082635_trash-can-trash-can-icon-transparent-hd-png.png"} alt={"Eliminar Producto"} width={30} />
+                            <td className='align-middle'><Link onClick={() => { removeItem(item.id) }}><img src={"/img/108-1082635_trash-can-trash-can-icon-transparent-hd-png.png"} alt={"Eliminar Producto"} width={30} />
                             </Link>
                             </td>
 
