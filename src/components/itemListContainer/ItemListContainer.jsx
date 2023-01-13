@@ -10,9 +10,6 @@ const ItemListContainer = () => {
     const [loading, setLoading] = useState(true)
     const { category } = useParams()
 
-
-
-
     useEffect(() => {
         const db = getFirestore();
         const queryCollection = collection(db, 'products');

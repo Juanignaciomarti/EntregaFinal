@@ -4,9 +4,9 @@ const Loader = () => {
   return (
 
     <div className='container'>
-      <div className='row my-5'>
+      <div className='row my-7'>
         <div className='col text-center'>
-          <div className="spinner-grow text-danger  m-5"  role="status">
+          <div className="spinner-border text-info m-7"  role="status">
           </div>
         </div>
       </div>

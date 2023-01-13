@@ -12,7 +12,7 @@ const Cart = () => {
                 <div className='row'>
                     <div className='col-md-12 text-center'>
                         <div className='alert alert-danger' role='alert'>
-                            No se encontraron productos en el carrito!
+                            No hay productos en el carrito!
                         </div>
                         <Link to={"/"} className="btn btn-primary">Volver a la página principal</Link>
                     </div>
@@ -41,7 +41,7 @@ const Cart = () => {
                             <td className='align-middle'><b>{item.name}</b></td>
                             <td className='align-middle'>{item.cantidad}</td>
                             <td className='align-middle'>${item.cantidad * item.price}</td>
-                            <td className='align-middle'><Link onClick={() => { removeItem(item.id) }}><img src={"/img/trash3-fill.svg"} alt={"Eliminar Producto"} width={30} />
+                            <td className='align-middle'><Link onClick={() => { removeItem(item.id) }}><img src={"https://www.kindpng.com/picc/m/108-1082635_trash-can-trash-can-icon-transparent-hd-png.png"} alt={"Eliminar Producto"} width={30} />
                             </Link>
                             </td>
 

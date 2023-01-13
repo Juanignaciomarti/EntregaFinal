@@ -9,7 +9,7 @@ const NavBar = () => {
         <nav >
             <div className='header'>
                 <Link to={'/'}><img src={"https://cdn-icons-png.flaticon.com/512/1178/1178912.png"} alt="logo" width={90}></img></Link>
-                <h1 className='title'>The Wine store</h1>
+                <h1 className='title'>The Wine Cellar</h1>
                 <div className='div-lista-header'>
                     <ul className='lista-header'>
                         <li >

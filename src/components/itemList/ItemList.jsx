@@ -3,7 +3,6 @@ import Item from '../item/Item'
 
 const ItemList = ({ listProducts }) => {
 
-
   return (
     <div>
        <div className="d-flex flex-wrap justify-content-center">

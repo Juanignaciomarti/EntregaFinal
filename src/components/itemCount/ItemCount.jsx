@@ -40,9 +40,9 @@ const ItemCount = ({ stock, onAdd }) => {
         <>
             <div className="row text-center">
                 <div className="col">
-                <button className="btn btn-danger m-2" onClick={decrement}>-</button>
-                <button className="btn btn-primary m-2">{count}</button>
-                <button className="btn btn-success  m-2" onClick={increanse}>+</button>
+                <button className="btn btn-warning m-2" onClick={decrement}>-</button>
+                <button className="btn btn-secondary m-2">{count}</button>
+                <button className="btn btn-info  m-2" onClick={increanse}>+</button>
 
                     
                 </div>

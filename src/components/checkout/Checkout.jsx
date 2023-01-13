@@ -39,14 +39,14 @@ const Checkout = () => {
               <input type="text" className="form-control" id="nombre" placeholder='Ingrese su Nombre' onInput={(e) => { setNombre(e.target.value) }} />
             </div>
             <div className="mb-3">
-              <label htmlFor="telefono" className="form-label">Telefono:</label>
-              <input type="number" className="form-control" id="telefono" placeholder='Ingrese su Telefono' onInput={(e) => { setTelefono(e.target.value) }} />
+              <label htmlFor="telefono" className="form-label">Teléfono</label>
+              <input type="number" className="form-control" id="telefono" placeholder='Ingrese su Teléfono' onInput={(e) => { setTelefono(e.target.value) }} />
             </div>
             <div className="mb-3">
-              <label htmlFor="email" className="form-label">Email:</label>
-              <input type="text" className="form-control" id="email" placeholder='Ingrese su Email' onInput={(e) => { setEmail(e.target.value) }} />
+              <label htmlFor="email" className="form-label">E-mail:</label>
+              <input type="text" className="form-control" id="email" placeholder='Ingrese su E-mail' onInput={(e) => { setEmail(e.target.value) }} />
             </div>
-            <button type="button" className="btn btn-primary" onClick={generarOrden} >Generar Orden</button>
+            <button type="button" className="btn btn-primary" onClick={generarOrden} >Generar Orden de compra</button>
           </form>
 
         </div>

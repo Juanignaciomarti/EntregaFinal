@@ -3,8 +3,6 @@ import React, { useState,createContext } from 'react'
 export const CartContext = createContext();
 
 
-
-
 const CartContextProvider = ({ children }) => {
     
     const [cart , setCart] = useState([]);
@@ -23,7 +21,6 @@ const CartContextProvider = ({ children }) => {
             setCart([...cart, {...product, cantidad:cantidad}])
         }
     } 
-
 
     const removeItem = (id) => {
         const product = cart.filter(x => x.id !==id)

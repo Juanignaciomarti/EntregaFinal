@@ -9,7 +9,7 @@ function BuyOrder() {
       <div className='row my-5'>
         <div className='col text-center'>
           <div className='alert alert-warning' role='alert'>
-            <h1>Gracias por tu compra</h1>
+            <h1>Gracias por confiar en nosotros!</h1>
             <p>Tu Número de Orden es: <b>{id}</b></p>
           </div>
           <Link to={"/"} className="btn btn-primary">Volver a la página principal</Link> 
