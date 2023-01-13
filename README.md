@@ -42,7 +42,7 @@ CartContext:
 
 Proporciona acceso a la información del carrito de compras y funciones para manipular el carrito a través de la aplicación. Incluye información sobre los productos agregados al carrito, la cantidad de cada producto en el carrito y el precio total de los productos en el carrito. Permiteeliminar productos del carrito y vaciar el carrito completamente.
 
-## Firebase y Reac Router
+## Firebase y React Router
 
 A su vez, este proyecto implemto Firebase y React Router.
 Firebase hace posible el almacenamiento y creacion de ordenes de compra. Posibilitando tener una base de datos en tiempo real, facilitando asi la gestion de datos para un optimo funcionamiento.
